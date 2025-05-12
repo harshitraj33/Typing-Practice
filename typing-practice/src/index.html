@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Practice</h1>
+        <p id="text-to-type"></p>
+        <textarea id="user-input" placeholder="Start typing here..." disabled></textarea>
+        <button id="start-button">Start</button>
+        <button id="pause-button" disabled>Pause</button>
+        <div id="results">
+            <p>Time: <span id="time">0</span> seconds</p>
+            <p>Speed: <span id="speed">0</span> WPM</p>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Typing Results</h2>
+            <p id="time-taken"></p>
+            <p id="typing-speed"></p>
+            <p id="typing-rating"></p>
+            <button id="try-again-button">Try Again</button>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
